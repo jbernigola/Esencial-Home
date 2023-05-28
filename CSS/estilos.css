@@ -14,7 +14,7 @@ h3{
     .contenedor-principal {
         display: grid;
         grid-template-columns: 20vw 60vw 20vw;
-        grid-template-rows: 15vh 8vh 60vh 43vh 10vh;
+        grid-template-rows: 15vh 8vh 60vh 55vh 10vh;
         grid-template-areas:
             "header     header      header"
             "menu-nav   menu-nav    menu-nav"
@@ -156,29 +156,27 @@ h3{
 }
 
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 750px) {
 
     /*BODY*/
     .contenedor-principal {
         display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 15vh 30vh 45vh 43vh 10vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vh auto 45vh auto 10vh;
         grid-template-areas:
-            "header     "
-            "menu-nav   "
-            "banner     "
-            "pro-dest   "
-            "pie        ";
+            "header"
+            "menu-nav"
+            "banner"
+            "pro-dest"
+            "pie";
     }
-
-
 
     /********************HEADER********************/
     .contenedor__header {
         grid-area: header;
         background-color: white;
         height: 15vh;
-        width: auto;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -211,35 +209,32 @@ h3{
     /********************NAV********************/
     .contenedor__nav {
         grid-area: menu-nav;
-        width: 100%;
-        z-index: 1;
+        width: 100vw;
         background-color: whitesmoke;
         display: flex;
         justify-content: center;
-        position: relative;
+        align-items: flex-end;
+
     }
 
     .nav__menu {
         list-style-type: none;
-        background-color: red;
-        width: 100%;
-
         display: flex;
         justify-content: center;
-        align-items:end;
+        align-items:center;
         flex-direction: column;
         position: relative;
+        top: 5%;
     }
 
     .nav__menu li{
         transition: all 0.3s;
         width: 100%;
-        padding: 1%;
+
     }   
 
     .nav__menu li a {
         padding: 1rem;
-        width: fit-content;
         font-size: larger;
         font-family: Montserrat, cursive;
         text-decoration: none;
@@ -252,24 +247,25 @@ h3{
 
     .banner{
         background-color: #C9BAB6;
-        width: auto;
-        height: 45vh;
+        width: 100vw;
+        height: auto;
         grid-area: banner;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: start;
     }
         .banner img{
-            height: 100%;
+            height: 45vw;
+            width: 100vw;
         }
 
     .productos_destacados{
         grid-area: pro-dest;
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: row;
-        background-color: beige;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;    
+
     }
 
         .productos_destacados div{
@@ -277,8 +273,8 @@ h3{
         }
 
         .productos_destacados img{
-            width: 250px;
-            height: 250px;
+            width: 20vw;
+            height: 20vw;
             border-radius: 15%;
             padding: 1%;
             background-color: silver;
