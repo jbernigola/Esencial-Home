@@ -1,4 +1,12 @@
-1) Hacer el Header con Flex. Hacerlo opaco para cuando este arriba de todo y solido para cuando se haga scrolling (como HBO Max)
-2) Carrusel de imagenes en el index (Promociones y noticias)
-3) Aplicar Grid + Bootstrap en el catalogo
-4) #C18174 marrón mas oscuro; #C9BAB6 marrón grisecito; #F4DACF marrón mas clarito tipo piel
+Colores: #C18174 marrón mas oscuro; #C9BAB6 marrón grisecito; #F4DACF marrón mas clarito tipo piel
+
+Colecciones CM & SE:
+    En vez de usar un nav, utilizar cards(quizá) para dirigirse a las secciones:
+        Estas van a ser imagenes con hover, 
+        tienen que aparecer el nombre de la 
+        seccion sobre la imagen en el centro 
+        y que se opaque al pararse sobre este.
+
+
+
+
