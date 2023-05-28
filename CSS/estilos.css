@@ -8,26 +8,37 @@ h3{
     font-family: "Montserrat";
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 750px) {
 
     /*BODY*/
     .contenedor-principal {
         display: grid;
         grid-template-columns: 20vw 60vw 20vw;
-        grid-template-rows: 15vh 8vh 60vh 60vh 10vh;
+        grid-template-rows: 15vh 8vh 60vh 43vh 10vh;
         grid-template-areas:
             "header     header      header"
             "menu-nav   menu-nav    menu-nav"
-            "banner     banner        banner"
+            "banner     banner      banner"
             "pro-dest   pro-dest    pro-dest"
             "pie        pie         pie";
+    }
+
+    .contenedor-paginas{
+        display: grid;
+        grid-template-columns: 20vw 60vw 20vw;
+        grid-template-rows: 15vh 8vh;
+        grid-template-areas:
+            "header     header      header"
+            "menu-nav   menu-nav    menu-nav"
+    }
     }
 
     /********************HEADER********************/
     .contenedor__header {
         grid-area: header;
         background-color: white;
-        height: 100%;
+        height: 15vh;
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -60,7 +71,9 @@ h3{
     /********************NAV********************/
     .contenedor__nav {
         grid-area: menu-nav;
-        width: 100%;
+        height: 8vh;
+        width: 100vw;
+
         background-color: whitesmoke;
         display: flex;
         justify-content: center;
@@ -80,7 +93,6 @@ h3{
     .nav__menu li{
         transition: all 0.3s;
         padding: 2rem;
-        border-bottom: 1rem;
     }   
         .nav__menu li:hover{
         transform: scale(1.1);
@@ -140,8 +152,5 @@ h3{
         justify-content: center;
         align-items: center;
     }
-    
-
-}
 
 
