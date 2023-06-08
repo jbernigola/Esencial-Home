@@ -36,10 +36,6 @@ h3 {
         align-items: center;
         z-index: 1;
 
-        div:hover {
-            transform: scale(1.2);
-        }
-
         div {
             transition: all 0.3s;
             display: flex;
@@ -58,10 +54,10 @@ h3 {
                 width: 80px;
                 height: 80px;
             }
+        }
 
-
-
-
+        div:hover {
+            transform: scale(1.2);
         }
     }
 
