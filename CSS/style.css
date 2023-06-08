@@ -9,7 +9,6 @@ h3 {
 }
 
 @media screen and (min-width: 750px) {
-
   /*BODY*/
   .contenedor-principal {
     display: grid;
@@ -17,7 +16,6 @@ h3 {
     grid-template-rows: auto 7vh auto auto 10vh;
     grid-template-areas: "header     header      header" "menu-nav   menu-nav    menu-nav" "banner     banner      banner" "prodest    prodest     prodest" "pie        pie         pie";
   }
-
   /********************HEADER********************/
   .contenedor__header {
     grid-area: header;
@@ -29,31 +27,26 @@ h3 {
     align-items: center;
     z-index: 1;
   }
-
   .contenedor__header div {
     transition: all 0.3s;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .contenedor__header div a {
     text-decoration: none;
-    font-family: cursive;
+    font-family: Montserrat, cursive;
     font-size: x-large;
-    color: rgb(255, 0, 150);
+    color: rgb(255, 160, 150);
     position: relative;
   }
-
   .contenedor__header div img {
     width: 80px;
     height: 80px;
   }
-
-  .contenedor__header div :hover {
+  .contenedor__header div:hover {
     transform: scale(1.2);
   }
-
   /********************NAV********************/
   .contenedor__nav {
     grid-area: menu-nav;
@@ -66,7 +59,6 @@ h3 {
     align-items: center;
     position: relative;
   }
-
   .nav__menu {
     list-style-type: none;
     display: flex;
@@ -75,16 +67,13 @@ h3 {
     position: relative;
     top: 10%;
   }
-
   .nav__menu li {
     transition: all 0.3s;
     padding: 2rem;
   }
-
   .nav__menu li:hover {
     transform: scale(1.1);
   }
-
   .nav__menu li a {
     padding: 1rem;
     width: -moz-fit-content;
@@ -95,11 +84,9 @@ h3 {
     transition: all 0.3s;
     color: #C18174;
   }
-
   ul.nav__menu li a:hover {
     color: rgb(255, 160, 150);
   }
-
   .banner {
     background-color: #C9BAB6;
     height: -moz-fit-content;
@@ -108,11 +95,9 @@ h3 {
     display: flex;
     justify-content: center;
   }
-
   .banner img {
     width: 100vw;
   }
-
   .productos_destacados {
     grid-area: prodest;
     display: flex;
@@ -121,14 +106,12 @@ h3 {
     flex-direction: row;
     padding: 1rem;
   }
-
   .productos_destacados div {
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .productos_destacados img {
     width: 20vw;
     height: 20vw;
@@ -136,29 +119,23 @@ h3 {
     background-color: silver;
     opacity: 0.7;
   }
-
   .productos_destacados img:hover {
     opacity: 1;
   }
-
   .contenedor__footer {
     grid-area: pie;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .seccion__carrusel {
     width: 100vw;
   }
-
   .card img {
     height: 260px;
   }
 }
-
 @media screen and (max-width: 750px) {
-
   /*BODY*/
   .contenedor-principal {
     display: grid;
@@ -166,7 +143,6 @@ h3 {
     grid-template-rows: 15vh 12vh auto auto 10vh;
     grid-template-areas: "header     header" "menu-nav   menu-nav" "banner     banner" "prodest    prodest" "pie        pie";
   }
-
   /********************HEADER********************/
   .contenedor__header {
     grid-area: header;
@@ -176,23 +152,19 @@ h3 {
     justify-content: center;
     align-items: center;
   }
-
   .contenedor__header div {
     transition: all 0.3s;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .contenedor__header div:hover {
     transform: scale(1.1);
   }
-
   .contenedor__header div img {
     width: 80px;
     height: 80px;
   }
-
   .contenedor__header div a {
     text-decoration: none;
     font-family: Montserrat, cursive;
@@ -200,7 +172,6 @@ h3 {
     color: rgb(255, 160, 150);
     position: relative;
   }
-
   /********************NAV********************/
   .contenedor__nav {
     grid-area: menu-nav;
@@ -209,7 +180,6 @@ h3 {
     display: flex;
     justify-content: center;
   }
-
   .nav__menu {
     list-style-type: none;
     padding: 0;
@@ -218,14 +188,12 @@ h3 {
     justify-content: center;
     flex-direction: column;
   }
-
   .nav__menu li {
     transition: all 0.3s;
     width: 100%;
     display: flex;
     justify-content: center;
   }
-
   .nav__menu li a {
     font-size: 14pt;
     font-family: Montserrat, cursive;
@@ -233,11 +201,9 @@ h3 {
     transition: all 0.3s;
     color: #C18174;
   }
-
   ul.nav__menu li a:hover {
     color: rgb(255, 160, 150);
   }
-
   .banner {
     background-color: #C9BAB6;
     width: 100vw;
@@ -248,12 +214,10 @@ h3 {
     justify-content: flex-start;
     align-items: start;
   }
-
   .banner img {
     width: 100vw;
     height: 55dvw;
   }
-
   .productos_destacados {
     grid-area: prodest;
     display: flex;
@@ -262,7 +226,6 @@ h3 {
     flex-direction: column;
     padding: 1rem;
   }
-
   .productos_destacados div {
     width: 100vw;
     padding: 0;
@@ -273,11 +236,9 @@ h3 {
     align-items: center;
     flex-direction: column;
   }
-
   .productos_destacados div div {
     padding: 1%;
   }
-
   .productos_destacados img {
     width: 260px;
     height: 260px;
@@ -286,11 +247,9 @@ h3 {
     background-color: silver;
     opacity: 0.7;
   }
-
   .productos_destacados img:hover {
     opacity: 1;
   }
-
   .contenedor__footer {
     grid-area: pie;
     display: flex;
@@ -298,14 +257,10 @@ h3 {
     align-items: center;
     position: relative;
   }
-
   .seccion__carrusel {
     width: 100vw;
   }
-
   .card img {
     height: 260px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
