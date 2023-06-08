@@ -33,19 +33,19 @@ h3 {
     justify-content: space-between;
     align-items: center;
   }
-  .contenedor__header div:hover {
-    transform: scale(1.2);
+  .contenedor__header div a {
+    text-decoration: none;
+    font-family: cursive;
+    font-size: x-large;
+    color: rgb(255, 0, 150);
+    position: relative;
   }
   .contenedor__header div img {
     width: 80px;
     height: 80px;
   }
-  .contenedor__header div a {
-    text-decoration: none;
-    font-family: Montserrat, cursive;
-    font-size: x-large;
-    color: rgb(255, 160, 150);
-    position: relative;
+  .contenedor__header div :hover {
+    transform: scale(1.2);
   }
   /********************NAV********************/
   .contenedor__nav {
