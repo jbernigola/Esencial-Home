@@ -131,7 +131,7 @@ h3 {
   .seccion__carrusel {
     width: 100vw;
   }
-  .card__img {
+  .card-img-top {
     height: 260px;
   }
 }

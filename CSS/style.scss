@@ -143,10 +143,7 @@ h3 {
                     opacity: 1;
                 }
             }
-
         }
-
-
     }
 
     .contenedor__footer {
@@ -161,10 +158,8 @@ h3 {
     }
 
     .card {
-
-        &__img {
+        &-img-top {
             height: 260px;
-
         }
     }
 }
