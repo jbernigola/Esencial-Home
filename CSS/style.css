@@ -103,21 +103,32 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    padding: 1rem;
+    flex-direction: column;
   }
   .productos_destacados__div {
-    width: 100vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fbf9f8;
+    padding-inline: 10%;
+  }
+  .productos_destacados__div h1 {
+    font-size: 25pt;
+    font-family: Dancing Script, Montserrat;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: silver;
   }
   .productos_destacados__div img {
-    width: 20vw;
-    height: 20vw;
+    width: 17vw;
+    margin: 3px;
+    height: 17vw;
     border-radius: 15%;
     background-color: silver;
-    opacity: 0.7;
+    opacity: 0.8;
+    padding: 1%;
   }
   .productos_destacados__div img:hover {
     opacity: 1;
