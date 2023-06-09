@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+*ul{  
+    padding: 0 !important;  /*Para evitar el formato de bs*/
+    margin: 0 !important;   /*Para evitar el formato de bs*/
+}
+
 h3 {
     font-family: "Montserrat";
 }
@@ -29,7 +34,7 @@ h3 {
     .contenedor__header {
         grid-area: header;
         background-color: white;
-        height: 15vh;
+        height: 10vh;
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -51,8 +56,8 @@ h3 {
             }
 
             img {
-                width: 80px;
-                height: 80px;
+                width: 5vw;
+                height: 5vw;
             }
 
             &:hover {
@@ -66,27 +71,24 @@ h3 {
         grid-area: menu-nav;
         height: auto;
         width: 100vw;
-
         background-color: whitesmoke;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
-
+        z-index: 1;
         &__menu {
             list-style-type: none;
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative;
-            top: 10%;
 
             li {
                 transition: all 0.3s;
-                padding-inline: 5vw;
-
+                margin-inline: 3vw;
+                flex-direction: column;
                 &:hover {
                     transform: scale(1.1);
+                
                 }
 
                 a {
@@ -135,7 +137,7 @@ h3 {
             padding-inline: 10%;
 
             h1{
-                font-size: 25pt;
+                font-size: 2.7vw;
                 font-family: Dancing Script, Montserrat;
                 display: flex;
                 justify-content: center;

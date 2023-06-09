@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+* ul {
+  padding: 0 !important; /*Para evitar el formato de bs*/
+  margin: 0 !important; /*Para evitar el formato de bs*/
+}
+
 h3 {
   font-family: "Montserrat";
 }
@@ -20,7 +25,7 @@ h3 {
   .contenedor__header {
     grid-area: header;
     background-color: white;
-    height: 15vh;
+    height: 10vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -41,8 +46,8 @@ h3 {
     position: relative;
   }
   .contenedor__header__div img {
-    width: 80px;
-    height: 80px;
+    width: 5vw;
+    height: 5vw;
   }
   .contenedor__header__div:hover {
     transform: scale(1.2);
@@ -56,19 +61,18 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    z-index: 1;
   }
   .contenedor__nav__menu {
     list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 10%;
   }
   .contenedor__nav__menu li {
     transition: all 0.3s;
-    padding-inline: 5vw;
+    margin-inline: 3vw;
+    flex-direction: column;
   }
   .contenedor__nav__menu li:hover {
     transform: scale(1.1);
@@ -113,7 +117,7 @@ h3 {
     padding-inline: 10%;
   }
   .productos_destacados__div h1 {
-    font-size: 25pt;
+    font-size: 2.7vw;
     font-family: Dancing Script, Montserrat;
     display: flex;
     justify-content: center;
