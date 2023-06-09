@@ -90,6 +90,17 @@ h3 {
   .contenedor__nav__menu li a:hover {
     color: rgb(255, 160, 150);
   }
+  .banner {
+    background-color: #C9BAB6;
+    height: -moz-fit-content;
+    height: fit-content;
+    grid-area: banner;
+    display: flex;
+    justify-content: center;
+  }
+  .banner img {
+    width: 100vw;
+  }
   .productos_destacados {
     grid-area: prodest;
     display: flex;
@@ -112,7 +123,6 @@ h3 {
     justify-content: center;
     align-items: center;
     color: silver;
-    height: 4rem;
   }
   .productos_destacados__div img {
     width: 17vw;
