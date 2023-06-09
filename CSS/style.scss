@@ -14,7 +14,7 @@ h3 {
     .contenedor-principal {
         display: grid;
         grid-template-columns: 20vw 60vw 20vw;
-        grid-template-rows: auto 7vh auto auto 10vh;
+        grid-template-rows: auto auto auto auto 10vh;
         grid-template-areas:
             "header     header      header"
             "menu-nav   menu-nav    menu-nav"
@@ -45,7 +45,7 @@ h3 {
             a {
                 text-decoration: none;
                 font-family: Montserrat, cursive;
-                font-size: x-large;
+                font-size: 24pt;
                 color: rgb(255, 160, 150);
                 position: relative;
             }
@@ -66,7 +66,7 @@ h3 {
         grid-area: menu-nav;
         height: auto;
         width: 100vw;
-        z-index: 1;
+
         background-color: whitesmoke;
         display: flex;
         justify-content: center;
@@ -83,7 +83,7 @@ h3 {
 
             li {
                 transition: all 0.3s;
-                padding: 2rem;
+                padding-inline: 5vw;
 
                 &:hover {
                     transform: scale(1.1);
@@ -92,7 +92,7 @@ h3 {
                 a {
                     padding: 0;
                     width: fit-content;
-                    font-size: 18pt;
+                    font-size: 1.7vw;
                     font-family: Montserrat, cursive;
                     text-decoration: none;
                     transition: all 0.3s;
@@ -112,11 +112,12 @@ h3 {
         grid-area: banner;
         display: flex;
         justify-content: center;
+        img {
+            width: 100vw;
+        }
     }
 
-    .banner img {
-        width: 100vw;
-    }
+    
 
     .productos_destacados {
         grid-area: prodest;
