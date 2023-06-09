@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
-*ul{  
-    padding: 0 !important;  /*Para evitar el formato de bs*/
-    margin: 0 !important;   /*Para evitar el formato de bs*/
+*ul {
+    padding: 0 !important;
+    /*Para evitar el formato de bs*/
+    margin: 0 !important;
+    /*Para evitar el formato de bs*/
 }
 
 h3 {
@@ -76,6 +78,7 @@ h3 {
         justify-content: center;
         align-items: center;
         z-index: 1;
+
         &__menu {
             list-style-type: none;
             display: flex;
@@ -86,9 +89,10 @@ h3 {
                 transition: all 0.3s;
                 margin-inline: 3vw;
                 flex-direction: column;
+
                 &:hover {
                     transform: scale(1.1);
-                
+
                 }
 
                 a {
@@ -109,7 +113,7 @@ h3 {
     }
 
 
-    
+
 
     .productos_destacados {
         grid-area: prodest;
@@ -126,7 +130,7 @@ h3 {
             background-color: #fbf9f8;
             padding-inline: 10%;
 
-            h1{
+            h1 {
                 font-size: 2.7vw;
                 font-family: Dancing Script, Montserrat;
                 display: flex;
@@ -135,7 +139,7 @@ h3 {
                 color: silver;
                 height: 4rem;
             }
-            
+
             img {
                 width: 17vw;
                 margin: 3px;
@@ -171,159 +175,160 @@ h3 {
 }
 
 
-    @media screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
 
-        /*BODY*/
-        .contenedor-principal {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 15vh 12vh auto auto 10vh;
-            grid-template-areas:
-                "header     header"
-                "menu-nav   menu-nav"
-                "banner     banner"
-                "prodest    prodest"
-                "pie        pie";
-        }
+    /*BODY*/
+    .contenedor-principal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 15vh 12vh auto auto 10vh;
+        grid-template-areas:
+            "header     header"
+            "menu-nav   menu-nav"
+            "banner     banner"
+            "prodest    prodest"
+            "pie        pie";
+    }
 
-        /********************HEADER********************/
-        .contenedor__header {
-            grid-area: header;
-            background-color: white;
+    /********************HEADER********************/
+    .contenedor__header {
+        grid-area: header;
+        background-color: white;
 
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        .contenedor__header div {
+
+        &__div {
             transition: all 0.3s;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            img {
+                width: 80px;
+                height: 80px;
+            }
+            :hover {
+                transform: scale(1.1);
+            }
+            a {
+                text-decoration: none;
+                font-family: Montserrat, cursive;
+                font-size: x-large;
+                color: rgb(255, 160, 150);
+                position: relative;
+            }
         }
 
-        .contenedor__header div:hover {
-            transform: scale(1.1);
-        }
+        
 
-        .contenedor__header div img {
-            width: 80px;
-            height: 80px;
-        }
-
-        .contenedor__header div a {
-            text-decoration: none;
-            font-family: Montserrat, cursive;
-            font-size: x-large;
-            color: rgb(255, 160, 150);
-            position: relative;
-        }
-
-        /********************NAV********************/
-        .contenedor__nav {
-            grid-area: menu-nav;
-            width: 100vw;
-            background-color: whitesmoke;
-            display: flex;
-            justify-content: center;
-        }
-
-        .nav__menu {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        .nav__menu li {
-            transition: all 0.3s;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .nav__menu li a {
-            font-size: 14pt;
-            font-family: Montserrat, cursive;
-            text-decoration: none;
-            transition: all 0.3s;
-            color: #C18174;
-        }
-
-        ul.nav__menu li a:hover {
-            color: rgb(255, 160, 150);
-        }
-
-        .banner {
-            background-color: #C9BAB6;
-            width: 100vw;
-            height: fit-content;
-            grid-area: banner;
-            display: flex;
-            justify-content: flex-start;
-            align-items: start;
-        }
-
-        .banner img {
-            width: 100vw;
-            height: 55dvw
-        }
-
-        .productos_destacados {
-            grid-area: prodest;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-
-            padding: 1rem;
-        }
-
-        .productos_destacados div {
-            width: 100vw;
-            padding: 0;
-            margin: 0;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .productos_destacados div div {
-            padding: 1%;
-        }
-
-        .productos_destacados img {
-            width: 260px;
-            height: 260px;
-            border-radius: 15%;
-            padding: .5%;
-            background-color: silver;
-            opacity: .7;
-        }
-
-        .productos_destacados img:hover {
-            opacity: 1;
-        }
-
-        .contenedor__footer {
-            grid-area: pie;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        .seccion__carrusel {
-            width: 100vw;
-        }
-
-        .card img {
-            height: 260px;
-        }
     }
+
+    /********************NAV********************/
+    .contenedor__nav {
+        grid-area: menu-nav;
+        width: 100vw;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav__menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .nav__menu li {
+        transition: all 0.3s;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav__menu li a {
+        font-size: 14pt;
+        font-family: Montserrat, cursive;
+        text-decoration: none;
+        transition: all 0.3s;
+        color: #C18174;
+    }
+
+    ul.nav__menu li a:hover {
+        color: rgb(255, 160, 150);
+    }
+
+    .banner {
+        background-color: #C9BAB6;
+        width: 100vw;
+        height: fit-content;
+        grid-area: banner;
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+    }
+
+    .banner img {
+        width: 100vw;
+        height: 55dvw
+    }
+
+    .productos_destacados {
+        grid-area: prodest;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        padding: 1rem;
+    }
+
+    .productos_destacados div {
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .productos_destacados div div {
+        padding: 1%;
+    }
+
+    .productos_destacados img {
+        width: 260px;
+        height: 260px;
+        border-radius: 15%;
+        padding: .5%;
+        background-color: silver;
+        opacity: .7;
+    }
+
+    .productos_destacados img:hover {
+        opacity: 1;
+    }
+
+    .contenedor__footer {
+        grid-area: pie;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .seccion__carrusel {
+        width: 100vw;
+    }
+
+    .card img {
+        height: 260px;
+    }
+}

@@ -5,8 +5,10 @@
 }
 
 * ul {
-  padding: 0 !important; /*Para evitar el formato de bs*/
-  margin: 0 !important; /*Para evitar el formato de bs*/
+  padding: 0 !important;
+  /*Para evitar el formato de bs*/
+  margin: 0 !important;
+  /*Para evitar el formato de bs*/
 }
 
 h3 {
@@ -156,20 +158,20 @@ h3 {
     justify-content: center;
     align-items: center;
   }
-  .contenedor__header div {
+  .contenedor__header__div {
     transition: all 0.3s;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .contenedor__header div:hover {
-    transform: scale(1.1);
-  }
-  .contenedor__header div img {
+  .contenedor__header__div img {
     width: 80px;
     height: 80px;
   }
-  .contenedor__header div a {
+  .contenedor__header__div :hover {
+    transform: scale(1.1);
+  }
+  .contenedor__header__div a {
     text-decoration: none;
     font-family: Montserrat, cursive;
     font-size: x-large;
