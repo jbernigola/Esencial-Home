@@ -21,7 +21,7 @@ h3 {
     .contenedor-principal {
         display: grid;
         grid-template-columns: 20vw 60vw 20vw;
-        grid-template-rows: auto auto auto auto 10vh;
+        grid-template-rows: 10vh auto auto auto 10vh;
         grid-template-areas:
             "header     header      header"
             "menu-nav   menu-nav    menu-nav"
@@ -36,19 +36,18 @@ h3 {
     .contenedor__header {
         grid-area: header;
         background-color: white;
-        height: 10vh;
-        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 1;
-
+        z-index: 2; 
+        position: sticky;  
+        top:0;
         &__div {
             transition: all 0.3s;
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            
             a {
                 text-decoration: none;
                 font-family: Montserrat, cursive;
@@ -63,7 +62,7 @@ h3 {
             }
 
             &:hover {
-                transform: scale(1.2);
+                transform: scale(1.1);
             }
         }
     }
@@ -77,8 +76,11 @@ h3 {
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 1;
-
+        position: sticky;
+        top: 10vh;
+        border-top-style: groove;
+        border-top-color: #C9BAB6;
+        z-index: 2;
         &__menu {
             list-style-type: none;
             display: flex;
