@@ -15,18 +15,19 @@ h3 {
     font-family: "Montserrat";
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 550px) {
 
     /*BODY*/
     .contenedor-principal {
         display: grid;
-        grid-template-columns: 20vw 60vw 20vw;
-        grid-template-rows: 10vh auto auto auto 10vh;
+        grid-template-columns: 10vw 80vw 10vw;
+        grid-template-rows: 10vh auto max-content max-content max-content 10vh;
         grid-template-areas:
             "header     header      header"
             "menu-nav   menu-nav    menu-nav"
             "banner     banner      banner"
             "prodest    prodest     prodest"
+            "profavs    profavs     profavs"
             "pie        pie         pie";
     }
 
@@ -44,6 +45,7 @@ h3 {
         top:0;
         &__div {
             transition: all 0.3s;
+            height: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -51,7 +53,7 @@ h3 {
             a {
                 text-decoration: none;
                 font-family: Montserrat, cursive;
-                font-size: 24pt;
+                font-size: 3vw;
                 color: rgb(255, 160, 150);
                 position: relative;
             }
@@ -71,8 +73,7 @@ h3 {
     .contenedor__nav {
         grid-area: menu-nav;
         height: auto;
-        width: 100vw;
-        background-color: whitesmoke;
+        background-color:whitesmoke;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -114,23 +115,19 @@ h3 {
         }
     }
 
-
-
-
     .productos_destacados {
         grid-area: prodest;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
+        padding: 1rem;
         &__div {
-            width: 100%;
+            width: 80vw;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: center;
-            background-color: #fbf9f8;
-            padding-inline: 10%;
+
 
             h1 {
                 font-size: 2.7vw;
@@ -138,8 +135,60 @@ h3 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: silver;
-                height: 4rem;
+                color: auto;
+                border-style: groove;
+                border-color: #C9BAB6;
+                height: auto;
+                width: 100%;
+                border-radius: 3rem;
+                border-radius: 3rem;
+                background-color: whitesmoke;
+            }
+
+            img {
+                width: 18vw;
+                margin: 3px;
+                height: 18vw;
+                border-radius: 15%;
+                background-color: silver;
+                opacity: .8;
+                padding: 1%;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .productos_favoritos {
+        grid-area: profavs;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+
+        &__div {
+            width: 80vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                font-size: 2.7vw;
+                font-family: Dancing Script, Montserrat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: auto;
+                border-style: groove;
+                border-color: #C9BAB6;
+                height: auto;
+                width: 100%;
+                border-radius: 3rem;
+                border-radius: 3rem;
+                background-color: whitesmoke;
             }
 
             img {
@@ -158,6 +207,8 @@ h3 {
         }
     }
 
+
+
     .contenedor__footer {
         grid-area: pie;
         display: flex;
@@ -165,9 +216,6 @@ h3 {
         align-items: center;
     }
 
-    .seccion__carrusel {
-        width: 100vw;
-    }
 
     .card {
         &-img-top {
@@ -176,8 +224,7 @@ h3 {
     }
 }
 
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 550px) {
 
     /*BODY*/
     .contenedor-principal {
