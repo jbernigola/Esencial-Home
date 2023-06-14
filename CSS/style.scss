@@ -31,7 +31,17 @@ h3 {
             "pie        pie         pie";
     }
 
+    .contenedor-coleccion{
+        display: grid;
+        grid-template-columns: 10vw 80vw 10vw;
+        grid-template-rows: 10vh auto auto 10vh;
+        grid-template-areas:
+            "header     header      header"
+            "menu-nav   menu-nav    menu-nav"
+            "none1      productos   none2"
+            "pie        pie         pie"
 
+    }
 
     /********************HEADER********************/
     .contenedor__header {
@@ -218,8 +228,10 @@ h3 {
 
 
     .card {
-        &-img-top {
+        width: auto;
+        img {
             height: 260px;
+            width: auto;
         }
     }
 }
@@ -232,23 +244,23 @@ h3 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 15vh 12vh auto auto 10vh;
         grid-template-areas:
-            "header     header"
-            "menu-nav   menu-nav"
-            "banner     banner"
-            "prodest    prodest"
-            "pie        pie";
+            "header     header      header"
+            "menu-nav   menu-nav    menu-nav"
+            "banner     banner      banner"
+            "prodest    prodest     prodest"
+            "pie        pie         pie";
     }
 
     /********************HEADER********************/
     .contenedor__header {
         grid-area: header;
         background-color: white;
-
         width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        z-index: 2; 
+        position: sticky;  
 
         &__div {
             transition: all 0.3s;
@@ -282,6 +294,9 @@ h3 {
         background-color: whitesmoke;
         display: flex;
         justify-content: center;
+        position: sticky;
+        top: 10vh;
+        z-index: 2;
     }
 
     .nav__menu {

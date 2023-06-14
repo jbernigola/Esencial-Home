@@ -23,6 +23,12 @@ h3 {
     grid-template-rows: 10vh auto max-content max-content max-content 10vh;
     grid-template-areas: "header     header      header" "menu-nav   menu-nav    menu-nav" "banner     banner      banner" "prodest    prodest     prodest" "profavs    profavs     profavs" "pie        pie         pie";
   }
+  .contenedor-coleccion {
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 10vh auto auto 10vh;
+    grid-template-areas: "header     header      header" "menu-nav   menu-nav    menu-nav" "none1      productos   none2" "pie        pie         pie";
+  }
   /********************HEADER********************/
   .contenedor__header {
     grid-area: header;
@@ -184,8 +190,12 @@ h3 {
     justify-content: center;
     align-items: center;
   }
-  .card-img-top {
+  .card {
+    width: auto;
+  }
+  .card img {
     height: 260px;
+    width: auto;
   }
 }
 @media screen and (max-width: 550px) {
@@ -194,7 +204,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 15vh 12vh auto auto 10vh;
-    grid-template-areas: "header     header" "menu-nav   menu-nav" "banner     banner" "prodest    prodest" "pie        pie";
+    grid-template-areas: "header     header      header" "menu-nav   menu-nav    menu-nav" "banner     banner      banner" "prodest    prodest     prodest" "pie        pie         pie";
   }
   /********************HEADER********************/
   .contenedor__header {
@@ -204,6 +214,8 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
+    position: sticky;
   }
   .contenedor__header__div {
     transition: all 0.3s;
@@ -232,6 +244,9 @@ h3 {
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 10vh;
+    z-index: 2;
   }
   .nav__menu {
     list-style-type: none;
