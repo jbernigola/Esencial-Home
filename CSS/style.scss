@@ -38,7 +38,7 @@ h3 {
         grid-template-areas:
             "header     header      header"
             "menu-nav   menu-nav    menu-nav"
-            "none1      productos   none2"
+            "productos  productos   productos"
             "pie        pie         pie"
 
     }
@@ -135,7 +135,7 @@ h3 {
         &__div {
             width: 80vw;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
 
 
@@ -227,10 +227,15 @@ h3 {
     }
 
 
+    .col{
+        width: 25vw;
+        padding-top: 1rem;
+    }
     .card {
-        width: auto;
+
+        width: 25vw;
+        position: relative;
         img {
-            height: 260px;
             width: auto;
         }
     }
@@ -244,11 +249,11 @@ h3 {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 15vh 12vh auto auto 10vh;
         grid-template-areas:
-            "header     header      header"
-            "menu-nav   menu-nav    menu-nav"
-            "banner     banner      banner"
-            "prodest    prodest     prodest"
-            "pie        pie         pie";
+            "header"
+            "menu-nav"
+            "banner"
+            "prodest"
+            "pie";
     }
 
     /********************HEADER********************/
